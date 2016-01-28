@@ -1,0 +1,33 @@
+{
+  "name": "greplint-cli",
+  "version": "0.0.1",
+  "description": "Command Line Interface for greplint",
+  "bin": {
+    "greplint": "bin/greplint-cli.js"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib --source-maps",
+    "prepublish": "npm run build",
+    "preversion": "npm run build",
+    "test": "npm run build && mocha --require babel-core/register"
+  },
+  "keywords": [
+    "linter",
+    "grep",
+    "greplint"
+  ],
+  "author": "diesire",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-preset-es2015": "^6.3.13",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "commander": "^2.9.0",
+    "greplint": "file:dependencies\\greplint-0.1.0.tgz"
+  }
+}
