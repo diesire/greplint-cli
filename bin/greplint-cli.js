@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-'use strict';
+'use strict'
 
-var Cli = require('../lib/cli').default;
+var Cli = require('../lib/cli').default
 
-new Cli().run(process.argv);
+new Cli().run(process.argv)
