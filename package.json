@@ -5,7 +5,7 @@
   "bin": {
     "greplint": "bin/greplint-cli.js"
   },
-  "main": "lib/index.js",
+  "main": "lib/cli.js",
   "scripts": {
     "build": "babel src --out-dir lib --source-maps",
     "prepublish": "npm run build",
