@@ -9,7 +9,7 @@
   "scripts": {
     "build": "babel src --out-dir lib --source-maps",
     "prepublish": "npm run build",
-    "preversion": "npm run build",
+    "preversion": "npm test",
     "test": "npm run build && mocha --require babel-core/register"
   },
   "keywords": [
