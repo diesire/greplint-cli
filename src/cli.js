@@ -36,7 +36,7 @@ export default class Cli {
   run(args) {
     if (args.length < 2) {
       console.log('Few arguments')
-      return 
+      return
     }
     if (args.length === 2) {
       this._program.help()
